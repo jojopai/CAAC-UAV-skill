@@ -1,0 +1,24 @@
+# Consistency rules — EXAMPLE, adapt the file names to your own project.
+#
+# This ships as an example because the right-hand names are project-specific.
+# Copy it into your workspace, replace the file names with yours, then run:
+#   python3 scripts/check_consistency.py --dir <your folder> --expect <your copy>
+# The keys themselves (the statutory values) should stay as they are; they come
+# from the regulation text.
+#
+# Format:  <key>|<file>,<file>[,...]
+# The key is matched against whitespace-stripped file content, and must be
+# present in EVERY listed file. Keys are written without spaces so that
+# "5 个工作日" and "5个工作日" both match.
+#
+# Keep this in sync with the statutory values in the regulation corpus; the
+# authoritative list is 取证工作流程/01 的「全局时限表」.
+
+5个工作日|01_总流程_无人机适航取证端到端.md,03_分流程B_型号合格审定流程.md,04_分流程C_设计机构许可证DOA审定流程.md,05_分流程D_生产机构许可证POA审定流程.md
+20个工作日|01_总流程_无人机适航取证端到端.md,03_分流程B_型号合格审定流程.md,05_分流程D_生产机构许可证POA审定流程.md
+10日内|01_总流程_无人机适航取证端到端.md,03_分流程B_型号合格审定流程.md,04_分流程C_设计机构许可证DOA审定流程.md
+24个月|01_总流程_无人机适航取证端到端.md,04_分流程C_设计机构许可证DOA审定流程.md,07_分流程F_证后管理与持续监督流程.md
+7个日历年|01_总流程_无人机适航取证端到端.md,04_分流程C_设计机构许可证DOA审定流程.md,07_分流程F_证后管理与持续监督流程.md
+15个日历年|01_总流程_无人机适航取证端到端.md,05_分流程D_生产机构许可证POA审定流程.md,07_分流程F_证后管理与持续监督流程.md
+21个工作日|01_总流程_无人机适航取证端到端.md,04_分流程C_设计机构许可证DOA审定流程.md
+48小时|01_总流程_无人机适航取证端到端.md,07_分流程F_证后管理与持续监督流程.md
