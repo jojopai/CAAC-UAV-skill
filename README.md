@@ -1,5 +1,7 @@
 # CAAC-UAV适航审定skill
 
+> 仓库地址：<https://github.com/jojopai/CAAC-UAV-skill>（仓库名 `CAAC-UAV-skill`，中文名作为项目名）
+
 面向 Codex 的**民用无人驾驶航空器适航取证**技能集。它把中国民航局现行的无人驾驶航空器适航审定法规，变成模型可执行、可机器核对的工作方法：先判定类别与路线，再建符合性与体系，最后过颁证门并维持证件有效。
 
 > **声明**：本仓库不是官方文件，不能替代民航局的审查结论。所有条款、时限与数值均来源于民航局公开发布的文件；如有出入，以官方发布版本为准。原始文件清单与下载地址见 [docs/sources.md](docs/sources.md)，本仓库不转载原文。
@@ -31,15 +33,15 @@
 在 Codex 中说：
 
 ```
-从 <你的用户名>/CAAC-UAV适航审定skill 安装技能，路径 skills/uav-airworthiness-cert、skills/uav-cert-compliance、skills/uav-cert-sustain
+从 jojopai/CAAC-UAV-skill 安装技能，路径 skills/uav-airworthiness-cert、skills/uav-cert-compliance、skills/uav-cert-sustain
 ```
 
 ### 方式二：手动复制
 
 ```bash
-git clone https://github.com/<你的用户名>/CAAC-UAV适航审定skill.git
+git clone https://github.com/jojopai/CAAC-UAV-skill.git
 mkdir -p ~/.agents/skills
-cp -R CAAC-UAV适航审定skill/skills/* ~/.agents/skills/
+cp -R CAAC-UAV-skill/skills/* ~/.agents/skills/
 ```
 
 安装后技能在**下一轮对话**即可被自动发现。阶段二、三需要阶段一存在，因为校验脚本与法规地图放在那里。
